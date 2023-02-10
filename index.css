@@ -4,6 +4,13 @@ body {
   background-color: rgb(30, 29, 29);
   color: white;
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+  background-image: url("https://images.unsplash.com/photo-1470225620780-dba8ba36b745?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxleHBsb3JlLWZlZWR8MXx8fGVufDB8fHx8&auto=format&fit=crop&w=2000&q=60");
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 * {
@@ -23,6 +30,7 @@ img {
   border: 1px solid lightblue;
   padding: 1em;
   margin: 2em auto;
+  background-color: black;
 }
 
 .song {
@@ -49,6 +57,10 @@ input[type="range"] {
   align-items: center;
 }
 
+#prev{
+  transition: scale 0.5 ease-in;
+}
+
 #prev:hover {
   cursor: pointer;
   scale: 1.4;
@@ -58,6 +70,7 @@ input[type="range"] {
 #master-play,
 #next {
   margin-left: 1em;
+  transition: scale 0.5;
 }
 
 #master-play:hover,
