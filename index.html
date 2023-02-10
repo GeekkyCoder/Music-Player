@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./index.css" />
+    <title>Music Player</title>
+  </head>
+  <body>
+    <div class="music-container">
+      <h2 class="status">Playing Now</h2>
+      <div class="cover">
+      <img id="cover" src="./covers/cover1.jpg" alt="cover-1" />
+    </div>
+      <p class="song">There is a hero in you</p>
+      <div class="timestamps">
+        <p id="start"></p>
+        <p id="end"></p>
+      </div>
+      <div id="range-container">
+          <input class="range" id="music-slider" type="range" min="0" max="100" value="0"/>
+      </div>
+      <div class="icons">
+        <i id="prev" class="fa-sharp fa-solid fa-backward"></i>
+        <i id="master-play" class="fa-solid fa-circle-play"></i>
+        <i id="next" class="fa-solid fa-forward"></i>
+      </div>
+    </div>
+
+    <script src="./index.js" type="module"></script>
+
+    <script
+      src="https://kit.fontawesome.com/15636f5df3.js"
+      crossorigin="anonymous"
+    ></script>
+  
+  </body>
+</html>
