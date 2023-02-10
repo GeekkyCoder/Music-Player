@@ -3,7 +3,7 @@ body {
   padding: 0;
   background-color: rgb(30, 29, 29);
   color: white;
-  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
 * {
@@ -49,7 +49,20 @@ input[type="range"] {
   align-items: center;
 }
 
+#prev:hover {
+  cursor: pointer;
+  scale: 1.4;
+  color: limegreen;
+}
+
 #master-play,
 #next {
   margin-left: 1em;
+}
+
+#master-play:hover,
+#next:hover {
+  cursor: pointer;
+  scale: 1.4;
+  color: limegreen;
 }
