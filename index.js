@@ -55,12 +55,13 @@ const handleSlider = () => {
 };
 
 const handleTimeUpdate = () => {
-  let progress = parseInt(
-    (audioElement.currentTime / audioElement.duration) * 100
-  );
+  sliderElm.max = `${audioElement.duration}`
+  // let progress = parseInt(
+  //   (audioElement.currentTime / audioElement.duration) * 100
+  // );
   endEl.textContent = convertHMS(audioElement.duration);
-  startEl.textContent = secondsToHms(progress);
-  sliderElm.value = progress;
+  startEl.textContent = secondsToHms(audioElement.currentTime);
+  sliderElm.value = `${audioElement.currentTime}`;
 };
 
 const handleNextAudio = () => {
